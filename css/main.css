@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-image: url("../src/Decorative-elements/hero-section-background.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 48% auto;
 }
 
 a {
@@ -20,11 +24,11 @@ a {
 }
 
 .btn {
-    width: 170px;
-    height: 60px;
+    padding: 18px 30px;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
+    border-radius: 10px;
 }
 
 
@@ -35,54 +39,51 @@ a {
 header {
     display: flex;
     justify-content: center;
-    color: #212832;
-    font-size: 17px;
-    font-weight: 500;
+    margin-top: 50px;
 }
 
-.header-container {
+.header__container {
     display: flex;
-    padding: 40px 0 10px 0;
     align-items: center;
 }
 
-.header-logo {
-    margin-right: 220px;
+.header__logo {
+    margin-right: auto;
     margin-bottom: 11px;
 }
 
-.nav-list {
+.nav__menu {
     list-style: none;
     display: flex;
     margin-right: 90px;
 }
 
-.nav-list__item {
+.nav__item {
     margin-right: 60px;
 
 }
 
-.nav-list__item:last-child {
+.nav__item:last-child {
     margin-right: 0;
 }
 
-.nav-list__item-link {
+.nav__link {
     color: #212832;
     font-size: 17px;
     font-weight: 500;
 }
 
-.header-btn {
+.header__btn {
     color: #212832;
     font-size: 17px;
-    width: 100px;
-    height: 40px;
+    padding: 9px 21px;
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.signup-btn {
+.btn_sign-up {
     border: 1px solid #212832;
     border-radius: 5px;
     margin: 0 40px 0 20px
@@ -96,6 +97,9 @@ header {
 .language {
     margin-right: 8px;
     height: auto;
+    color: #212832;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .arrow {
@@ -106,7 +110,7 @@ header {
 }
 
   
-.arrow-down {
+.arrow_down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     margin-top: 13px;
@@ -117,6 +121,95 @@ header {
 ############################################################################################ */
 
 .hero {
-    background-image: url('../src/Decorative-elements/hero-section-background.jpg');
-    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__container {
+    display: flex;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 150px;
+    width: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+.hero__subtitle {
+    color: #DF6951;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero__title {
+    color: #181E4B;
+    font-size: 84px;
+    font-weight: bold;
+    font-family: 'Volkhov', serif;
+    margin-bottom: 30px;
+}
+
+.hero__title__word__wrapper {
+    background-image: url("../src/Decorative-elements/Decore.svg");
+    background-repeat: no-repeat;
+    background-position: 265px 80px;
+    padding-right: 60px;
+}
+
+.hero__text {
+    color: #5E6282;
+    margin-bottom: 35px;
+}
+
+.btn__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn {
+    background-color: #F1A501;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 45px;
+}
+
+.hero__btn_play {
+    background-color: #DF6951;
+    border-radius: 100%;  
+    padding: 18px;
+    display: flex;
+    margin-right: 25px;
+}
+
+
+.hero__btn__triangle {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 11px solid #fff;
+    border-bottom: 7px solid transparent;
+    margin: 0 auto;
+    margin-left: 3px;
+  }
+
+.btn__text {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hero__image__wrapper {
+    width: 50%;
+}
+
+.hero__image {
+    margin-top: 10%;
+    margin-left: -18%;
 }

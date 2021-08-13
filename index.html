@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
     <title>Travel Agency</title>
 </head>
 <body>
     <header>    
-        <div class="container header-container">
-            <svg class="header-logo" width="116" height="35" viewBox="0 0 116 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="container header__container">
+            <svg class="header__logo" width="116" height="35" viewBox="0 0 116 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M75 29L84.5 32L92.5 24L102.5 31L113 29L108.5 14.5L92.5 19.5L83.5 14.5L74 16L75 29Z" fill="#F1A501"/>
                 <path d="M0.919983 24.064V21.902L7.03798 20.798V23.788C7.06865 25.4134 7.48265 26.64 8.27998 27.468C9.10798 28.2654 10.1966 28.664 11.546 28.664C12.8646 28.664 13.9073 28.2347 14.674 27.376C15.4713 26.5174 15.87 25.3674 15.87 23.926V1.38604H22.218V23.926C22.218 26.9314 21.2213 29.4767 19.228 31.562C17.2346 33.6474 14.6893 34.69 11.592 34.69C8.37198 34.69 5.78065 33.724 3.81798 31.792C1.88598 29.8294 0.919983 27.2534 0.919983 24.064Z" fill="black"/>
                 <path d="M23.6767 27.836C23.6767 25.904 24.3054 24.3554 25.5627 23.19C26.82 22.0247 28.4454 21.2887 30.4387 20.982L36.0047 20.154C37.1394 20.0007 37.7067 19.464 37.7067 18.544C37.7067 17.6854 37.3694 16.98 36.6947 16.428C36.0507 15.876 35.1154 15.6 33.8887 15.6C32.6007 15.6 31.5734 15.9527 30.8067 16.658C30.0707 17.3634 29.6567 18.2374 29.5647 19.28L24.1367 18.13C24.3514 16.1674 25.3174 14.4347 27.0347 12.932C28.752 11.4294 31.0214 10.678 33.8427 10.678C37.216 10.678 39.7 11.4907 41.2947 13.116C42.8894 14.7107 43.6867 16.7654 43.6867 19.28V30.412C43.6867 31.7614 43.7787 32.9574 43.9627 34H38.3507C38.1974 33.3254 38.1207 32.4207 38.1207 31.286C36.6794 33.5247 34.456 34.644 31.4507 34.644C29.12 34.644 27.234 33.9694 25.7927 32.62C24.382 31.2707 23.6767 29.676 23.6767 27.836ZM32.7387 30.09C34.18 30.09 35.3607 29.6914 36.2807 28.894C37.2313 28.066 37.7067 26.7167 37.7067 24.846V23.834L32.6007 24.616C30.73 24.892 29.7947 25.8427 29.7947 27.468C29.7947 28.204 30.0554 28.8327 30.5767 29.354C31.098 29.8447 31.8187 30.09 32.7387 30.09Z" fill="black"/>
@@ -22,29 +20,47 @@
                 <path d="M99.8699 27.422C101.005 28.5567 102.369 29.124 103.964 29.124C105.559 29.124 106.908 28.5567 108.012 27.422C109.147 26.2874 109.714 24.708 109.714 22.684C109.714 20.66 109.147 19.0807 108.012 17.946C106.908 16.8114 105.559 16.244 103.964 16.244C102.369 16.244 101.005 16.8114 99.8699 17.946C98.7659 19.0807 98.2139 20.66 98.2139 22.684C98.2139 24.708 98.7659 26.2874 99.8699 27.422ZM95.4539 14.082C97.7233 11.8127 100.56 10.678 103.964 10.678C107.368 10.678 110.189 11.8127 112.428 14.082C114.697 16.3514 115.832 19.2187 115.832 22.684C115.832 26.1494 114.697 29.0167 112.428 31.286C110.189 33.5554 107.368 34.69 103.964 34.69C100.56 34.69 97.7233 33.5554 95.4539 31.286C93.2153 29.0167 92.0959 26.1494 92.0959 22.684C92.0959 19.2187 93.2153 16.3514 95.4539 14.082Z" fill="black"/>
             </svg>
             <nav>
-                <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a href="http://www.google.com" target="_blank" class="nav-list__item-link">Desitnations</a>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="http://www.google.com" target="_blank" class="nav__link">Desitnations</a>
                     </li>
-                    <li class="nav-list__item"> 
-                        <a href="http://www.google.com" target="_blank" class="nav-list__item-link">Hotels</a>
+                    <li class="nav__item"> 
+                        <a href="http://www.google.com" target="_blank" class="nav__link">Hotels</a>
                     </li>
-                    <li class="nav-list__item">
-                        <a href="http://www.google.com" target="_blank" class="nav-list__item-link">Flights</a>
+                    <li class="nav__item">
+                        <a href="http://www.google.com" target="_blank" class="nav__link">Flights</a>
                     </li>
-                    <li class="nav-list__item">
-                        <a href="http://www.google.com" target="_blank" class="nav-list__item-link">Bookings</a>
+                    <li class="nav__item">
+                        <a href="http://www.google.com" target="_blank" class="nav__link">Bookings</a>
                     </li>
                 </ul>
             </nav>
-            <a href="http://www.google.com" target="_blank" class="btn header-btn login-btn">Login</a>
-            <a href="http://www.google.com" target="_blank" class="btn header-btn signup-btn">Sign Up</a>
+            <a href="http://www.google.com" target="_blank" class="header__btn">Login</a>
+            <a href="http://www.google.com" target="_blank" class="header__btn btn_sign-up">Sign Up</a>
             <div class="language-changer">
                 <span class="language">EN</span>
-                <p class="arrow arrow-down"></p>
+                <p class="arrow arrow_down"></p>
             </div>
         </div>
     </header>
-    <section class="hero"></section>
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="hero__subtitle">Best Destinations around the world</span>
+                <span class="hero__title"><span class="hero__title__word__wrapper">Travel, enjoy</span> and live a new and full life</span>    
+                <span class="hero__text">Built Wicket longer admire do barton vanity itself do in it. <br> Preferred to sportsmen it engrossed listening. Park gate <br> sell they west hard for the.</span>
+                <div class="btn__wrapper">
+                    <a href="http://www.google.com" class="btn hero__btn">Find out more</a>
+                    <a href="http://www.google.com" class="btn hero__btn_play">
+                        <p class="hero__btn__triangle"></p>
+                    </a>
+                    <span class="btn__text">Play Demo</span>
+                </div>
+            </div>
+            <div class="hero__image__wrapper">
+                <img class="hero__image" src="./src/Decorative-elements/Group.png" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
