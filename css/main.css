@@ -8,10 +8,6 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-image: url("../src/Decorative-elements/hero-section-background.svg");
-    background-position: right top;
-    background-repeat: no-repeat;
-    background-size: 48% auto;
 }
 
 a {
@@ -21,10 +17,15 @@ a {
 
 .container {
     width: 1230px;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
 }
 
 .btn {
-    padding: 18px 30px;
+    padding: 1em 1.7em;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -36,10 +37,11 @@ a {
 ####################################### HEADER #############################################
 ############################################################################################ */
 
-header {
+.header {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    font-weight: 500;
 }
 
 .header__container {
@@ -48,45 +50,44 @@ header {
 }
 
 .header__logo {
-    margin-right: auto;
     margin-bottom: 11px;
+    margin-right: auto;
+}
+
+.nav {
+    width: 50%;
+    margin-left: auto;
 }
 
 .nav__menu {
     list-style: none;
     display: flex;
-    margin-right: 90px;
-}
-
-.nav__item {
-    margin-right: 60px;
-
-}
-
-.nav__item:last-child {
-    margin-right: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .nav__link {
     color: #212832;
-    font-size: 17px;
-    font-weight: 500;
+}
+
+.headers__buttons {
+    width: 25%;
 }
 
 .header__btn {
     color: #212832;
-    font-size: 17px;
-    padding: 9px 21px;
-    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 
 .btn_sign-up {
+    margin: auto;
     border: 1px solid #212832;
     border-radius: 5px;
-    margin: 0 40px 0 20px
+    padding: 9px 21px;
 }
 
 .language-changer {
@@ -98,8 +99,6 @@ header {
     margin-right: 8px;
     height: auto;
     color: #212832;
-    font-size: 17px;
-    font-weight: 500;
 }
 
 .arrow {
@@ -113,7 +112,22 @@ header {
 .arrow_down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    margin-top: 13px;
+    margin-top: 10px;
+}
+
+.header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 30px;
+    min-width: 20px;
+    height: 20px;
+}
+
+.burger__item {
+    height: 3px;
+    background-color: #212832;
+    border-radius: 5px;
 }
 
 /* ############################################################################################
@@ -155,19 +169,12 @@ header {
     margin-bottom: 30px;
 }
 
-.hero__title__word__wrapper {
-    background-image: url("../src/Decorative-elements/Decore.svg");
-    background-repeat: no-repeat;
-    background-position: 265px 80px;
-    padding-right: 60px;
-}
-
 .hero__text {
     color: #5E6282;
     margin-bottom: 35px;
 }
 
-.btn__wrapper {
+.btn-wrapper {
     display: flex;
     align-items: center;
 }
@@ -178,19 +185,19 @@ header {
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    margin-right: 45px;
+    margin-right: 50px;
 }
 
 .hero__btn_play {
     background-color: #DF6951;
     border-radius: 100%;  
-    padding: 18px;
+    padding: 1.2em;
     display: flex;
-    margin-right: 25px;
+    margin-right: 5%;
 }
 
 
-.hero__btn__triangle {
+.btn__triangle {
     width: 0;
     height: 0;
     border-top: 7px solid transparent;
@@ -201,11 +208,10 @@ header {
   }
 
 .btn__text {
-    font-size: 17px;
     font-weight: 500;
 }
 
-.hero__image__wrapper {
+.hero__image-wrapper {
     width: 50%;
 }
 
