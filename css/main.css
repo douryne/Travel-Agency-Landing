@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+
+    background-image: url("../src/Decorative-elements/hero-section-background.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: calc((100vw - 1280px) / 2 + 640px);
 }
 
 a {
@@ -16,12 +21,8 @@ a {
 }
 
 .container {
-    width: 1230px;
+    width: 1280px;
     padding: 0 40px;
-}
-
-.flex {
-    display: flex;
 }
 
 .btn {
@@ -30,6 +31,10 @@ a {
     font-size: 18px;
     font-weight: 500;
     border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -72,6 +77,7 @@ a {
 }
 
 .headers__buttons {
+    display: flex;
     width: 25%;
 }
 
@@ -119,7 +125,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 30px;
+    margin-left: 20px;
     min-width: 20px;
     height: 20px;
 }
@@ -147,10 +153,8 @@ a {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
-    margin-top: 150px;
+    margin-top: calc(1vw + 65px);
     width: 50%;
-    position: relative;
-    z-index: 3;
 }
 
 .hero__subtitle {
@@ -163,49 +167,50 @@ a {
 
 .hero__title {
     color: #181E4B;
-    font-size: 84px;
+    font-size: clamp(2.5rem, 4.4vw + 1.3rem, 5.25rem);
     font-weight: bold;
     font-family: 'Volkhov', serif;
     margin-bottom: 30px;
 }
 
 .hero__text {
-    color: #5E6282;
+    width: 80%;
     margin-bottom: 35px;
 }
 
-.btn-wrapper {
+.hero__buttons {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero__btn {
     background-color: #F1A501;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
     margin-right: 50px;
 }
 
-.hero__btn_play {
-    background-color: #DF6951;
-    border-radius: 100%;  
-    padding: 1.2em;
+.hero__play {
     display: flex;
-    margin-right: 5%;
+    align-items: center;
 }
 
+.hero__btn_play {
+    background-color: #DF6951;
+    border-radius: 100%;
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+    padding: 0;
+}
 
 .btn__triangle {
     width: 0;
     height: 0;
-    border-top: 7px solid transparent;
-    border-left: 11px solid #fff;
-    border-bottom: 7px solid transparent;
-    margin: 0 auto;
+    border-style: solid;
+    border-width: 7px 0 7px 12px;
+    border-color: transparent transparent transparent #fff;
     margin-left: 3px;
-  }
+}
 
 .btn__text {
     font-weight: 500;
@@ -213,9 +218,13 @@ a {
 
 .hero__image-wrapper {
     width: 50%;
+    position: relative;
 }
 
 .hero__image {
-    margin-top: 10%;
-    margin-left: -18%;
+    width: 120%;
+    display: block;
+    position: absolute;
+    right: -30px;
+    margin-top: 50px;
 }

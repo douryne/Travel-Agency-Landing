@@ -3,8 +3,16 @@
         font-size: 12px;
     }
 
+    .btn {
+        font-size: 15px;
+    }
+
     .arrow_down {
         margin-top: 5px;
+    }
+
+    .hero__subtitle {
+        font-size: 14px;
     }
 }
 
@@ -15,12 +23,45 @@
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        background-size: 200px;
+    }
 
     .nav__menu {
         display: none;
     }
 
     .header__btn {
+        display: none;
+    }
+
+    .hero__container {
+        justify-content: center;
+    }
+
+    .hero__content {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .hero__buttons {
+        width: 80%;
+        height: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero__btn {
+        margin: auto;
+    }
+    
+    .hero__play {
+        margin: auto;
+    }
+
+    .hero__image-wrapper {
         display: none;
     }
 }
