@@ -273,11 +273,12 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 
+
 .category .card {
     width: 240px;
     height: 320px;
     display: flex;
-    margin: 50px auto;
+    margin: 30px 30px;
     justify-content: center;
     background-color: #FFF;
     flex-direction: column;
@@ -304,8 +305,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .category .card:hover::before, .card:focus::before  {
-    bottom: -40px;
-    left: -40px;
+    bottom: -30px;
+    left: -30px;
 }
 
 .category .card:hover, .card:focus {
@@ -314,6 +315,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .category .card:hover .card::before {
     background-color: #FFF1DA;
+}
+
+.pair {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .category .card .image {
@@ -341,33 +348,35 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
 }
 
-.category .card:nth-child(2) .image::before {
+.category .pair:nth-child(1) .card:nth-child(2) .image::before {
     border-radius: 5px 10px 5px 18px;
     top: 0;
     left: 0;
 }
 
-.category .card:nth-child(2) .image .icon {
+.category .pair:nth-child(1) .card:nth-child(2) .image .icon {
     left: -50%;
     top: -50%;
 }
 
-.category .card:nth-child(3) .image::before {
+.category .pair:nth-child(2) .card:nth-child(1) .image::before {
     border-radius: 5px 18px 5px 10px;
     top: 0;
     right: 0;
 }
 
-.category .card:nth-child(3) .image .icon {
+.category .pair:nth-child(2) .card:nth-child(1) .image .icon {
     top: 10%;
     left: 25%;
 }
 
-.category .card:nth-child(4) .image::before {
+.category .pair:nth-child(2) .card:nth-child(2) .image::before {
     border-radius: 5px 10px 5px 18px;
+    right: 0;
+    bottom: 0;
 }
 
-.category .card:nth-child(4) .image .icon {
+.category .pair:nth-child(2) .card:nth-child(2) .image .icon {
     top: 15%;
     left: 15%;
 }

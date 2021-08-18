@@ -14,6 +14,10 @@
     .hero__subtitle {
         font-size: 14px;
     }
+
+    .category .container {
+        background-image: unset;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -63,6 +67,10 @@
 
     .hero__image-wrapper {
         display: none;
+    }
+
+    .category {
+        margin-top: 100px;
     }
 }
 
