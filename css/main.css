@@ -409,7 +409,6 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 399px;
     margin-top: 50px;
 }
 
@@ -418,9 +417,16 @@ h1, h2, h3, h4, h5, h6 {
     width: clamp(240px, 30vw, 320px);
     height: auto;
     border-radius: 25px;
+    cursor: pointer;
     overflow: hidden;
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
     margin: 30px clamp(10px, 3vw - 15px, 50px);
+
+    transition: transform .2s;
+}
+
+.top_selling .card:hover, .top_selling .card:hover {
+    transform: scale(1.02);
 }
 
 .top_selling .card .image {
