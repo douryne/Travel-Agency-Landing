@@ -57,14 +57,6 @@
         justify-content: center;
     }
 
-    .hero__btn {
-        margin: auto;
-    }
-    
-    .hero__play {
-        margin: auto;
-    }
-
     .hero__image-wrapper {
         display: none;
     }

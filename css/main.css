@@ -201,12 +201,12 @@ h1, h2, h3, h4, h5, h6 {
 .hero__buttons {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 50px;
 }
 
 .hero__btn {
     background-color: #F1A501;
     font-family: 'Roboto', sans-serif;
-    margin-right: 50px;
 }
 
 .hero__play {
@@ -391,4 +391,63 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     line-height: 1.625;
     width: 80%;
+}
+
+/* ############################################################################################
+####################################### TOP SELLING #############################################
+############################################################################################ */
+
+.top_selling {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.top_selling .container {
+    text-align: center;
+}
+
+.top_selling .cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.top_selling .card {
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+    margin: 30px 50px;
+}
+
+.top_selling .info {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    padding: 30px 25px 40px 25px;
+    border-radius: 0 0 25px 25px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 125%;
+}
+
+.top_selling .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_selling .card  .line:nth-child(2) {
+    margin-top: 25px;
+    justify-content: unset;
+}
+
+.top_selling .icon {
+    margin-right: 15px;
+}
+
+.top_selling .days {
+    font-size: 16px;
 }
