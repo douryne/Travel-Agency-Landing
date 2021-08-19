@@ -14,10 +14,6 @@
     .hero__subtitle {
         font-size: 14px;
     }
-
-    .category .container {
-        background-image: unset;
-    }
 }
 
 @media screen and (min-width: 769px) {
@@ -63,6 +59,10 @@
 
     .category {
         margin-top: 100px;
+    }
+
+    .top_selling .cards {
+        flex-direction: column;
     }
 }
 
