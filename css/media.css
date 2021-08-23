@@ -64,5 +64,23 @@
     .top_selling .cards {
         flex-direction: column;
     }
+
+    .Easy-and-Fast .container {
+        flex-direction: column;
+    }
+
+    .Easy-and-Fast .content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .Easy-and-Fast .step {
+        flex-direction: column;
+    }
+
+    .Easy-and-Fast .step .icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 

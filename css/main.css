@@ -421,11 +421,9 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
     margin: 30px clamp(10px, 3vw - 15px, 50px);
-
-    transition: transform .2s;
 }
 
-.top_selling .card:hover, .top_selling .card:hover {
+.top_selling .card:hover, .top_selling .card:focus {
     transform: scale(1.02);
 }
 
@@ -462,4 +460,203 @@ h1, h2, h3, h4, h5, h6 {
 
 .top_selling .days {
     font-size: clamp(0.625rem, 1vw + 0.2rem, 1rem);
+}
+
+/* ############################################################################################
+####################################### EASY AND FAST #############################################
+############################################################################################ */
+
+.Easy-and-Fast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+.Easy-and-Fast .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Easy-and-Fast .content {
+    width: 45%;
+}
+
+.Easy-and-Fast .subtitle {
+    margin: 15px 0 30px 0;
+}
+
+.Easy-and-Fast .step {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.Easy-and-Fast .step .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 13px;
+    background-color: #F0BB1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.Easy-and-Fast .step .content {
+    width: 60%;
+}
+
+.Easy-and-Fast .step .title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 125%;
+    margin-bottom: 10px;
+}
+
+.Easy-and-Fast .step .text {
+    line-height: 125%;
+    margin: 0;
+}
+
+.Easy-and-Fast .offer {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.Easy-and-Fast .card {
+    background-color: #fff;
+    box-shadow: 30px -30px 100px 1px rgba(89, 177, 230, 0.2);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px 30px 25px;
+    width: clamp(240px, 40vw, 370px);
+    height: 100%;
+}
+
+.Easy-and-Fast .card .title {
+    color: #080809;
+    margin-top: 25px;
+    line-height: 125%;
+}
+
+.Easy-and-Fast .card .text {
+    color: #84829A;
+    line-height: 125%;
+}
+
+.Easy-and-Fast .card .icons {
+    display: flex;
+    margin: 20px 0 30px 0;
+}
+
+.Easy-and-Fast .card .icons .icon {
+    background-color: #F5F5F5;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    margin-right: 15px;
+
+    cursor: pointer;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color .2s;
+}
+
+.Easy-and-Fast .card .icons .icon:hover {
+    background-color: #daf0ff;
+}
+
+.Easy-and-Fast .people-likes {
+    display: flex;
+    align-items: center;
+}
+
+.Easy-and-Fast .people-likes .building {
+    margin-right: 15px;
+}
+
+.Easy-and-Fast .people-likes .like {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.Easy-and-Fast .like:hover svg  path, .Easy-and-Fast .like:focus svg  path {
+    fill: #4152CA;
+}
+
+.Easy-and-Fast .card .ongoing {
+    background-color: #fff;
+    position: absolute;
+    bottom: 20px;
+    right: -60px;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.Easy-and-Fast .card .like:hover .ongoing {
+    display: flex;
+}
+
+.avatar {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.Easy-and-Fast .ongoing .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Easy-and-Fast .ongoing .subtitle {
+    color: #84829A;
+    font-size: 14px;
+    line-height: 125%;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.Easy-and-Fast .ongoing .title {
+    margin: 0 0 15px 0;
+}
+
+.Easy-and-Fast .ongoing .completed {
+    color:black;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.Easy-and-Fast .ongoing .percent {
+    color: #8A79DF;
+}
+
+.Easy-and-Fast .ongoing .line {
+    height: 5px;
+    width: 100%;
+    background-color: #F5F5F5;
+    border-radius: 30px;
+    position: relative;
+}
+
+.Easy-and-Fast .ongoing .completed-line {
+    width: 40%;
+    background-color: #8A79DF;
+    position: absolute;
+    left: 0;
 }
