@@ -26,16 +26,12 @@
     body {
         background-size: 200px;
     }
-    
-    .Easy-and-Fast .container, .top_selling .cards, .Easy-and-Fast .step, .review .container {
+
+    .Easy-and-Fast .container, .top_selling .cards, .Easy-and-Fast .step, .review .container, .subscription .form {
         flex-direction: column;
     }
 
-    .nav__menu {
-        display: none;
-    }
-
-    .header__btn {
+    .nav__menu, .header__btn, .hero__image-wrapper {
         display: none;
     }
 
@@ -55,10 +51,6 @@
         height: 150px;
         align-items: center;
         justify-content: center;
-    }
-
-    .hero__image-wrapper {
-        display: none;
     }
 
     .category {
@@ -83,6 +75,17 @@
     .review .reviews {
         margin-top: 100px;
         width: 100%;
+    }
+
+    .subscription input {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .subscription .icon {
+        right: 50%;
+        left: 50%;
+        transform: translateX(-45%);
     }
 }
 

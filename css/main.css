@@ -765,7 +765,7 @@ h1, h2, h3, h4, h5, h6 {
 ############################################################################################ */
 
 .partners {
-    margin: 100px 0;
+    margin: 150px 0;
 }
 
 .partners .container {
@@ -789,4 +789,88 @@ h1, h2, h3, h4, h5, h6 {
 .partners .company:hover {
     background-color: #fff;
     box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ############################################################################################
+####################################### SUBSCRIPTION #############################################
+############################################################################################ */
+
+.subscription {
+    margin-bottom: 500px;
+}
+
+.subscription .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(223, 215, 249, .2);
+    border-radius: 130px 20px 20px 20px;
+    padding: 80px 155px;
+    position: relative;
+}
+
+.subscription .text {
+    font-size: clamp(0.875rem, 2.2vw + 0.3rem, 2.0625rem);
+    line-height: 3.375rem;
+    font-weight: 600;
+    margin-bottom: 75px;
+    z-index: 2;
+}
+
+.subscription .form {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.subscription input {
+    background-image: url("../src/Icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: clamp(10px, 2vw, 30px);
+    padding-left: clamp(40px, 6vw, 60px);
+    width: 45%;
+    height: 70px;
+    font-size: 14px;
+    margin: 0 25px 0 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.subscription .btn {
+    background: linear-gradient(180deg, rgba(255,148,109,1) 0%, rgba(255,125,104,1) 100%);
+    padding: 25px 50px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.subscription .icon {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(180deg, rgba(116,125,239,1) 100%, rgba(94,59,225,1) 100%);
+}
+
+.subscription .icon svg {
+    margin: 0 0 5px 15px;
+}
+
+.subscription .background-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.subscription .background-img-2 {
+    left: unset;
+    right: 0;
+    top: 0;
 }
