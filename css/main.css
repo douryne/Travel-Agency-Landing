@@ -662,7 +662,7 @@ h1, h2, h3, h4, h5, h6 {
 ############################################################################################ */
 
 .review {
-    margin: 200px 0 500px;
+    margin: 200px 0;
     --active-dot-color: #39425D;
 }
 
@@ -758,4 +758,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .review .arrow_up {
     border-color: #BCB7C2;
+}
+
+/* ############################################################################################
+####################################### PARTNERS #############################################
+############################################################################################ */
+
+.partners {
+    margin: 100px 0;
+}
+
+.partners .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners .company {
+    margin: auto;
+    display: flex;
+    min-width: 180px;
+    min-height: 162px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    
+    transition: box-shadow .2s;
+}
+
+.partners .company:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.1);
 }

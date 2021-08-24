@@ -26,6 +26,10 @@
     body {
         background-size: 200px;
     }
+    
+    .Easy-and-Fast .container, .top_selling .cards, .Easy-and-Fast .step, .review .container {
+        flex-direction: column;
+    }
 
     .nav__menu {
         display: none;
@@ -61,30 +65,15 @@
         margin-top: 100px;
     }
 
-    .top_selling .cards {
-        flex-direction: column;
-    }
-
-    .Easy-and-Fast .container {
-        flex-direction: column;
-    }
-
     .Easy-and-Fast .content {
         width: 90%;
         text-align: center;
     }
 
-    .Easy-and-Fast .step {
-        flex-direction: column;
-    }
 
     .Easy-and-Fast .step .icon {
         margin-right: 0;
         margin-bottom: 10px;
-    }
-
-    .review .container {
-        flex-direction: column;
     }
 
     .review .text {
