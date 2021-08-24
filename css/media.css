@@ -82,5 +82,18 @@
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    .review .container {
+        flex-direction: column;
+    }
+
+    .review .text {
+        width: 100%;
+    }
+
+    .review .reviews {
+        margin-top: 100px;
+        width: 100%;
+    }
 }
 

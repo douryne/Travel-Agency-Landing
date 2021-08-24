@@ -41,7 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 1280px;
-    padding: 0 40px;
+    padding: 0 30px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
@@ -56,14 +61,32 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+  
+.arrow_down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+.arrow_up {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+
+
 
 /* ############################################################################################
 ####################################### HEADER #############################################
 ############################################################################################ */
 
 .header {
-    display: flex;
-    justify-content: center;
     margin-top: 50px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -128,20 +151,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #212832;
 }
 
-.arrow {
-    border: solid black;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
-  
-.arrow_down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    margin-top: 10px;
-}
-
 .header__burger {
     display: flex;
     flex-direction: column;
@@ -160,11 +169,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ############################################################################################
 ####################################### HERO #############################################
 ############################################################################################ */
-
-.hero {
-    display: flex;
-    justify-content: center;
-}
 
 .hero__container {
     display: flex;
@@ -251,12 +255,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ############################################################################################
-####################################### CATEGORY  #############################################
+####################################### CATEGORY #############################################
 ############################################################################################ */
 
 .category {
-    display: flex;
-    justify-content: center;
     margin-top: 200px;
 }
 
@@ -396,8 +398,6 @@ h1, h2, h3, h4, h5, h6 {
 ############################################################################################ */
 
 .top_selling {
-    display: flex;
-    justify-content: center;
     margin-top: 100px;
 }
 
@@ -467,11 +467,7 @@ h1, h2, h3, h4, h5, h6 {
 ############################################################################################ */
 
 .Easy-and-Fast {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 200px;
-    margin-bottom: 300px;
 }
 
 .Easy-and-Fast .container {
@@ -659,4 +655,107 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #8A79DF;
     position: absolute;
     left: 0;
+}
+
+/* ############################################################################################
+####################################### REVIEW #############################################
+############################################################################################ */
+
+.review {
+    margin: 200px 0 500px;
+    --active-dot-color: #39425D;
+}
+
+.review .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.review .text {
+    width: 40%;
+    margin: auto;
+}
+
+.review .dots {
+    display: flex;
+    margin-top: 80px;
+}
+
+.review .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #E5E5E5;
+    margin-right: 25px;
+}
+
+.reviews {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.review .review-card {
+    width: 90%;
+
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px 60px 35px 30px;
+}
+
+.review .review-card-no-active {
+    position: absolute;
+    bottom: -44%;
+    right: 5%;
+    opacity: .7;
+    z-index: 1;
+}
+
+.review .avatar {
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+
+.review .name {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.review .position {
+    font-size: 0.825em;
+    margin-top: 5px;
+}
+
+.review .arrows {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.review .arrow {
+    width: 11px;
+    height: 11px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.review .arrow_up {
+    border-color: #BCB7C2;
 }
