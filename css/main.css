@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -688,6 +692,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 12px;
     border-radius: 100%;
     background-color: #E5E5E5;
+    border: none;
+    cursor: pointer;
     margin-right: 25px;
 }
 
@@ -751,8 +757,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 11px;
     border: solid black;
     border-width: 0 2px 2px 0;
+    background-color: transparent;
     display: inline-block;
     padding: 5px;
+    margin: 20px 0;
     cursor: pointer;
 }
 
@@ -794,10 +802,6 @@ h1, h2, h3, h4, h5, h6 {
 /* ############################################################################################
 ####################################### SUBSCRIPTION #############################################
 ############################################################################################ */
-
-.subscription {
-    margin-bottom: 500px;
-}
 
 .subscription .content {
     display: flex;
@@ -873,4 +877,116 @@ h1, h2, h3, h4, h5, h6 {
     left: unset;
     right: 0;
     top: 0;
+}
+
+/* ############################################################################################
+####################################### FOOTER #############################################
+############################################################################################ */
+
+.footer {
+    margin-top: 100px;
+    font-weight: 500;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+
+.footer .column {
+    display: flex;
+    flex-direction: column;
+    margin: 30px clamp(5px, 3vw, 40px);
+}
+
+.footer .logo {
+    font-size: clamp(2rem, 1.4vw + 1.7rem, 2.75rem);
+    color:#181E4B;
+}
+
+.footer .text {
+    font-size: 0.8125em;
+    line-height: 125%;
+    color:#5E6282;
+}
+
+.footer .list-name {
+    font-size: clamp(1.1rem, 0.4vw + 1rem, 1.3125rem);
+    line-height: 125%;
+    font-weight: bold;
+    color: #080809;
+}
+
+.footer .list {
+    list-style: none;
+    padding: 0;
+    font-size: clamp(0.9rem, 0.4vw + 0.8rem, 1.125rem);
+    line-height: 125%;
+}
+
+.footer .list li {
+    margin: 15px 0 0;
+}
+
+.footer .icons {
+    display: flex;
+}
+
+.footer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.footer .icon:nth-child(2) {
+    background-image: url("../src/Decorative-elements/Social.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: unset;
+    margin: 0 25px;
+    width: 45px;
+    height: 45px;
+}
+
+.footer .agitation {
+    font-size: 20px;
+    line-height: 125%;
+    margin: 25px 0 15px 5px;
+}
+
+.footer .app-links {
+    display: flex;
+}
+
+.footer .app-link {
+    background-image: url("../src/Decorative-elements/Google_Play.jpg");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 107px;
+    height: 35px;
+}
+
+.footer .app-link:nth-child(2) {
+    background-image: url("../src/Decorative-elements/Play_Store.jpg");
+    margin-left: 10px;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin: 80px 0;
+    font-size: 14px;
+    line-height: 125%;
+    width: 100%;
 }
